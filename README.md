@@ -1,2 +1,8 @@
 # hospital-management-frontend
-Features:  User-friendly interface for hospital staff and administrators. View and manage patient ,medicine details. Responsive design for mobile and desktop devices.
+Features: 
+1.User-friendly interface for hospital staff and administrators. 
+2.View and manage patient ,medicine details. 
+3.Responsive design for mobile and desktop devices.
+Technologies Used:
+Framework/Library: ( Angular)
+Styling: (Bootstrap,CSS)
