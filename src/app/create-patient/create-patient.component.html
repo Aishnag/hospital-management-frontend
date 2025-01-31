@@ -1,0 +1,122 @@
+<nav style="margin: auto" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: white" class="navbar-brand" href="#">GEETARTH HOSPITAL</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+           <li class="nav-item">
+          <a
+            style="color: white"
+            class="nav-link active"
+            aria-current="page"
+            href="javascript:void(0);"
+            routerLink="/docdash"
+            >
+            Back
+            </a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+  <h2 class="text-center">Add New Patient</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Name here"
+        class="form-control"
+        [(ngModel)]="patient.first_name"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="form-group">
+      <label>Blood</label>
+      <input
+        type="text"
+        name="blood"
+        id="blood"
+        placeholder="Enter Blood Group here"
+        class="form-control"
+        [(ngModel)]="patient.blood"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="form-group">
+      <label>Age</label>
+      <input
+        type="text"
+        name="age"
+        id="age"
+        placeholder="Enter age here"
+        class="form-control"
+        [(ngModel)]="patient.age"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="form-group">
+      <label>Prescipstion</label>
+      <input
+        type="text"
+        name="prescipstion"
+        id="prescipstion"
+        placeholder="Enter Prescipstion here"
+        class="form-control"
+        [(ngModel)]="patient.prescipstion"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="form-group">
+      <label>Dose</label>
+      <input
+        type="text"
+        name="dose"
+        id="dose"
+        placeholder="Enter Dose here"
+        class="form-control"
+        [(ngModel)]="patient.dose"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="form-group">
+      <label>Fees</label>
+      <input
+        type="text"
+        name="fees"
+        id="fees"
+        placeholder="Enter Fees here"
+        class="form-control"
+        [(ngModel)]="patient.fees"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="form-group">
+      <label>Urgency</label>
+      <input
+        type="text"
+        name="urgency"
+        id="urgency"
+        placeholder="Enter urgency here"
+        [(ngModel)]="patient.urgency"
+        class="form-control"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
